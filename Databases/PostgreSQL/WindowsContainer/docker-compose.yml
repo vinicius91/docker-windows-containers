@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  db:
+    build: .
+    environment:
+      POSTGRES_PASSWORD: docker
+      POSTGRES_USER: docker
+      POSTGRES_DB: docker
+      PGDOWNLOADVER: postgresql-9.5.9-1-windows-x64-binaries.zip
+    ports:
+      - 8432:5432
+
+    
